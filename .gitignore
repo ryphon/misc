@@ -1,35 +1,62 @@
-*.py[cod]
 
-# C extensions
-*.so
+*.pyc
 
-# Packages
-*.egg
-*.egg-info
-dist
-build
-eggs
-parts
-bin
-var
-sdist
-develop-eggs
-.installed.cfg
-lib
-lib64
+#Junk Files
+*.DS_Store
+[Tt]humbs.db
 
-# Installer logs
-pip-log.txt
+#Visual Studio Files
+[Oo]bj
+[Bb]in
+[Dd]ebug
+[Bb]uild/
+*.user
+*.suo
+*.exe
+*.pdb
+*.aps
+*_i.c
+*_p.c
+*.ncb
+*.tlb
+*.tlh
+*.[Cc]ache
+*.bak
+*.ncb
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+ipch/ 
+*.dbmdl
+*.csproj.user
+*.cache
+*.swp
+*.vspscc
+*.vssscc
+*.bak.*
+*.bak
 
-# Unit test / coverage reports
-.coverage
-.tox
-nosetests.xml
+#Tools
+_ReSharper.*
+_ReSharper*/
+*.resharper
+*.resharper.user
+[Nn][Dd]epend[Oo]ut*/
+Ankh.NoLoad
 
-# Translations
-*.mo
+#Other
+.svn
 
-# Mr Developer
-.mr.developer.cfg
-.project
-.pydevproject
+# Include DLLs if they're in the NuGet packages directory
+!/packages/*/lib/*.dll
+!/packages/*/lib/*/*.dll
+
+*.py#
+code/cpp/everything
+code/cpp/hello
+code/cpp/lec31
+code/cpp/stack_vs_heap_array_pointers
+tags
+*.taghl
