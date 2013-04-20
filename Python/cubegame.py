@@ -42,7 +42,7 @@ def solve(pos, solution, used_towers, best):
 			used_towers[size] = used_towers[size] | color
 			solution[pos/6][pos%6] = color
 			if pos > best:
-				print "######", pos + 1, "towers placed"
+				print "#################", pos + 1, "towers placed"
 				print_solution(solution)
 				best = pos
 			best, solution = solve(pos+1, solution, used_towers, best)
