@@ -53,6 +53,6 @@ Ankh.NoLoad
 !/packages/*/lib/*.dll
 !/packages/*/lib/*/*.dll
 
-*.py#
 tags
 *.taghl
+*.o
