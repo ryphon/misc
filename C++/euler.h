@@ -4,3 +4,4 @@ using namespace std;
 
 int multiples();
 
+double lrgprimefac();
