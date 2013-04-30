@@ -1,5 +1,6 @@
 #include "euler.h"
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -33,16 +34,26 @@ int multiples() {
 	}
 }
 
-double lrgprimefac() {
-	double num = 600851475143;
-	for (double i = 1; i > 0; i++) {
-		if (num % i == 0) {
-			for (double z = 2; z > i; z++) {
-				if (i % z != 0) {
-				}
-			}
+float lrgprimefac() {
+	float num = 600851475143;
+	for (float i = 1; i > 0; i++) {
+		float factor = 0;
+		if (fmod(num,i) == 0) {
+			factor = i;
+		}
+		if (is_prime(factor) == true) {
+			break;	
 		}
 	}
 }
 
-
+bool is_prime(float n) {
+	for (int i = 2; i <= n; i++) {
+		if (fmod(n,i) == 0) {
+			return false;
+		}
+		if (i == n && fmod(i,n) != 0) {
+			return true;
+		}
+	}
+}

@@ -4,4 +4,6 @@ using namespace std;
 
 int multiples();
 
-double lrgprimefac();
+float lrgprimefac();
+
+bool is_prime(float n);
