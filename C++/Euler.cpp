@@ -47,7 +47,7 @@ float lrgprimefac() {
 	}
 }
 
-bool is_prime(float n) {
+bool is_prime(int n) {
 	for (int i = 2; i <= n; i++) {
 		if (fmod(n,i) == 0) {
 			return false;
@@ -57,3 +57,16 @@ bool is_prime(float n) {
 		}
 	}
 }
+
+int pythago(int n) {
+	int a;
+	int b;
+	int c;
+	if (a + b + c == 1000) {
+		cout << "a: " << a << endl;
+		cout << "b: " << b << endl;
+		cout << "c: " << c << endl;
+	}
+}
+
+

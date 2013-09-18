@@ -7,3 +7,5 @@ int multiples();
 float lrgprimefac();
 
 bool is_prime(float n);
+
+int pythago(int n);
